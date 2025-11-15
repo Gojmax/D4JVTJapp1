@@ -10,12 +10,10 @@ class JELSZOapp:
 
         self.pd = PdJelszoKezelo()
 
-
-        self.label_szolg = tk.Label(root, text="Szolgáltatás")
+        self.label_szolg = tk.Label(root, text="Szolgáltatás (pl. gmail):")
         self.label_szolg.pack()
         self.entry_szolg = tk.Entry(root)
         self.entry_szolg.pack()
-
 
         self.listbox = tk.Listbox(root, height=12, width=70)
         self.listbox.pack(padx=10, pady=10)
@@ -34,6 +32,8 @@ class JELSZOapp:
 
         self.btn_torol = tk.Button(root, text="Kijelölt jelszó törlése", command=self.btn_torol_click)
         self.btn_torol.pack(padx=10, pady=2)
+
+        self._frissit_lista()
 
     def _frissit_lista(self):
         self.listbox.delete(0, tk.END)
@@ -57,7 +57,6 @@ class JELSZOapp:
         if not szolgaltatas:
             messagebox.showwarning("Figyelem", "Add meg a szolgáltatás nevét!")
             return
-
         try:
             index = self.listbox.curselection()[0]
             sor = self.listbox.get(index)
