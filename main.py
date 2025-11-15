@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import pd_generator as jg
 from pd_jelszokezelo import PdJelszoKezelo
-#asd
+
 class JELSZOapp:
     def __init__(self, root):
         self.root = root
