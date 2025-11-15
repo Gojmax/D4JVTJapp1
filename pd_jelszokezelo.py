@@ -4,7 +4,7 @@ import os
 class PdJelszoKezelo:
     def __init__(self, fajlnev='jelszavak.json'):
         self.fajlnev = fajlnev
-        self.jelszo_adatok = []  # Lista: (szolgaltatas, jelszo) párok
+        self.jelszo_adatok = []  
         self.pd_betolt()
 
     def pd_hozzaad(self, szolgaltatas, jelszo):
