@@ -29,6 +29,21 @@ pd_jelszokezelo.py
 
 main.py
 
+    __init__(self, root) 
+
+    _frissit_lista(self)
+
+    btn_szamok_click(self)
+
+    btn_karakterek_click(self) 
+
+    btn_komplex_click(self)
+
+    btn_hozzaad_click(self)
+
+    btn_torol_click(self)
+
+
 Az adatok mentése és betöltése JSON formátumban történik a jelszavak.json fájlban.
 
 Használt modulok
