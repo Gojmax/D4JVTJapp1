@@ -2,8 +2,6 @@ Pólya Dániel - D4JVTJ
 
 Jelszógeneráló és jelszókezelő app.
 
-Modulok
-
 
 pd_generator.py
 
